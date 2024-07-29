@@ -21,7 +21,7 @@ export class rank extends plugin {
     const image1 = 'plugins/cb-plugin/resources/rank/1.png'
     const image2 = 'plugins/cb-plugin/resources/rank/2.png'
 
-    let msg = ["114\n",segment.image(image1),"514",segment.image(image2)]
+    let msg = ["精神拟境强度榜：",segment.image(image1),"长线关卡强度榜：",segment.image(image2)]
     await e.reply(msg)
   }
 }

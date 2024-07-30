@@ -1,11 +1,4 @@
-import { segment } from 'oicq'
-import { dirname } from 'path'
-import { fileURLToPath } from 'url'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
-
-export class material extends plugin {
+export class cb_material extends plugin {
   constructor () {
     super({
       name: 'cb_material',
@@ -22,14 +15,10 @@ export class material extends plugin {
   }
 
   async cb_material (e) {
-    const imagePath1 = `${__dirname}/../resources/material/1.png`
-    const imagePath2 = `${__dirname}/../resources/material/2.png`
-
-    await e.reply([
-      '武器材料：\n',
-      segment.image(imagePath1),
-      '神格神经：\n',
-      segment.image(imagePath2)
-    ])
+    const image1 = `plugins/cb-plugin/resources/material/1.png`
+    const image2 = `plugins/cb-plugin/resources/material/2.png`
+    const image3 = `plugins/cb-plugin/resources/material/3.png`
+    let msg = ["武器材料：",segment.image(image1),"神格神经：",segment.image(image2),"信源解析：",segment.image(image3)]
+    e.reply(msg)
   }
 }

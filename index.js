@@ -1,12 +1,9 @@
-//导入node:fs模块
 import fs from 'node:fs';
 
-//输出提示
 logger.info('----------(*ˉ︶ˉ*)----------')
-logger.info('欢迎使用cb-plugin')
+logger.info('尘白禁区插件 cb-plugin 初始化')
 logger.info('----------(*ˉ︶ˉ*)----------')
 
-//加载插件
 const files = fs.readdirSync('./plugins/cb-plugin/apps').filter(file => file.endsWith('.js'))
 
 let ret = []
@@ -14,7 +11,6 @@ let ret = []
 files.forEach((file) => {
   ret.push(import(`./apps/${file}`))
 })
-
 
 ret = await Promise.allSettled(ret)
 
@@ -29,6 +25,5 @@ for (let i in files) {
   }
   apps[name] = ret[i].value[Object.keys(ret[i].value)[0]]
 }
-
 
 export { apps }

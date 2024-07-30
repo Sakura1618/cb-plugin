@@ -1,11 +1,4 @@
-import { segment } from 'oicq'
-import { dirname } from 'path'
-import { fileURLToPath } from 'url'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
-
-export class help extends plugin {
+export class cb_help extends plugin {
   constructor () {
     super({
       name: 'cb_help',
@@ -19,13 +12,12 @@ export class help extends plugin {
         }
       ]
     })
-  };
+  }
 
   async cb_help (e) {
-    const imagePath = `${__dirname}/../resources/img/help.png`
-
+    const image = `plugins/cb-plugin/resources/help/help.png`
     await e.reply([
-      segment.image(imagePath)
+      segment.image(image)
     ])
     return true
   }

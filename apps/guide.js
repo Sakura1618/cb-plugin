@@ -17,27 +17,27 @@ function getImagesByName (name) {
   return images
 }
 
-export class cb_guide extends plugin {
+export class cbGuide extends plugin {
   constructor () {
     super({
-      name: 'cb_guide',
+      name: 'cbGuide',
       dsc: '尘白角色攻略',
       event: 'message',
       priority: 250,
       rule: [
         {
           reg: '^#?(尘白|cb)(\\S+)攻略$',
-          fnc: 'cb_guide'
+          fnc: 'cbGuide'
         },
         {
           reg: '^#?(尘白|cb)角色列表$',
-          fnc: 'guide_list'
+          fnc: 'guideList'
         }
       ]
     })
   }
 
-  async cb_guide (e) {
+  async cbGuide (e) {
     const match = e.msg.match(/^#?(尘白|cb)(\S+)攻略$/)
     if (!match) {
       await e.reply('指令格式错误，请使用(#)尘白/cb[角色名]攻略。')
@@ -54,7 +54,7 @@ export class cb_guide extends plugin {
     }
   }
 
-  async guide_list (e) {
-    e.reply('里芙：无限之视/狂猎/星期三\n芬妮：辉耀/咎冠/黄金狮子\n瑟瑞斯： 瞬刻/小金鱼\n琴诺：悖谬/双面\n凯西娅：蓝闪\n恩雅：羽蜕/姐姐大人\n伊切尔：豹豹\n苔丝：魔术师\n晴：藏锋/旧日王辉\n猫汐尔：溯影/猫猫\n安卡希雅：辉夜/不可显示\n辰星：云篆/观测者\n肴：冬至/养生专家\n茉莉安：雨燕/绷带小姐\n芙缇雅：缄默/小太阳\n妮塔：四手')
+  async guideList (e) {
+    e.reply('薇蒂雅：龙舌兰\n里芙：无限之视/狂猎/星期三\n芬妮：辉耀/咎冠/黄金狮子\n瑟瑞斯： 瞬刻/小金鱼\n琴诺：悖谬/双面\n凯西娅：蓝闪\n恩雅：羽蜕/姐姐大人\n伊切尔：豹豹\n苔丝：魔术师\n晴：藏锋/旧日王辉\n猫汐尔：溯影/猫猫\n安卡希雅：辉夜/不可显示\n辰星：云篆/观测者\n肴：冬至/养生专家\n茉莉安：雨燕/绷带小姐\n芙缇雅：缄默/小太阳\n妮塔：四手')
   }
 }

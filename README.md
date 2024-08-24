@@ -1,7 +1,6 @@
+![cb-plugin](https://socialify.git.ci/Sakura1618/cb-plugin/image?description=1&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Auto)
 # cb-plugin
 cb-Plugin 是一个 Yunzai-Bot 的游戏类插件，提供尘白禁区的相关功能。
-
-![cb-plugin](resources/cb-Plugin.png)
 
 ## 安装教程 💡
 ### 使用 Git 安装（推荐）

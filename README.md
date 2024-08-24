@@ -18,8 +18,6 @@ cb-Plugin 是一个 Yunzai-Bot 的游戏类插件，提供尘白禁区的相关�
 
 ## 功能介绍 📖
 
-![cb-plugin](resources/help/help.png)
-
 - 帮助图：cb帮助
 - 查看养成材料：cb材料
 - 查看强度榜：cb强度榜

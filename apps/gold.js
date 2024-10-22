@@ -15,7 +15,7 @@ export class cbGold extends plugin {
   }
 
   async cbGold (e) {
-    const image1 = 'plugins/cb-plugin/resources/gold/1.jpg'
+    const image1 = 'plugins/cb-plugin/resources/gold/1.png'
     const image2 = 'plugins/cb-plugin/resources/gold/2.png'
     let msg = [segment.image(image1), segment.image(image2)]
     e.reply(msg)

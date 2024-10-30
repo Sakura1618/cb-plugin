@@ -7,7 +7,7 @@ export class cbGold extends plugin {
       priority: 250,
       rule: [
         {
-          reg: '^#?cb数据金$',
+          reg: '^#?(尘白|cb)数据金$',
           fnc: 'cbGold'
         }
       ]

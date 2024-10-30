@@ -7,7 +7,7 @@ export class cbHelp extends plugin {
       priority: 250,
       rule: [
         {
-          reg: '^#?(尘白帮助|cb帮助)$',
+          reg: '^#?(尘白|cb)帮助$',
           fnc: 'cbHelp'
         }
       ]

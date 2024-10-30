@@ -7,7 +7,7 @@ export class cbRank extends plugin {
       priority: 250,
       rule: [
         {
-          reg: '^#?(尘白强度榜|cb强度榜)$',
+          reg: '^#?(尘白|cb)强度榜$',
           fnc: 'cbRank'
         }
       ]

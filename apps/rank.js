@@ -16,8 +16,7 @@ export class cbRank extends plugin {
 
   async cbRank (e) {
     const image1 = 'plugins/cb-plugin/resources/rank/1.png'
-    const image2 = 'plugins/cb-plugin/resources/rank/2.png'
-    let msg = ['精神拟境强度榜：', segment.image(image1), '长线关卡强度榜：', segment.image(image2)]
+    let msg = ['2.4强度榜：', segment.image(image1)]
     e.reply(msg)
   }
 }

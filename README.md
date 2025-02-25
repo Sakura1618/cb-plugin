@@ -24,6 +24,8 @@ cb-Plugin 是一个 Yunzai-Bot 的游戏类插件，提供尘白禁区的相关�
 1. 在Yunzai目录打开终端，运行
     ```sh
     git clone https://github.com/Sakura1618/cb-plugin.git ./plugins/cb-plugin
+    如果网络很差可使用代理加速服务
+    git clone https://ghproxy.lyln.us.kg/https://github.com/Sakura1618/cb-plugin.git ./plugins/cb-plugin
     ```
 2. 重启 Yunzai-Bot 后即可使用。
 
